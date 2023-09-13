@@ -1,0 +1,294 @@
+{
+  "id": "2b8552dd-09e9-4d67-8a5d-7f47c812dc4f",
+  "version": "2.0",
+  "name": "Testing of the website ROSETKA",
+  "url": "https://rozetka.com.ua/ua/",
+  "tests": [{
+    "id": "50908dd4-a532-4b5c-b8f4-55fc8566986e",
+    "name": "Search for a product using the search bar",
+    "commands": [{
+      "id": "b1d1bd0f-f395-436d-9e3c-483a7e683ff5",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a983aa1-1b0f-4ee6-915a-d8268f1c7b1e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a731fec3-dbc5-469d-87f0-d05b610f6802",
+      "comment": "",
+      "command": "click",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f874d2b-12b3-4e62-b276-e12339844afb",
+      "comment": "",
+      "command": "type",
+      "target": "name=search",
+      "targets": [
+        ["name=search", "name"],
+        ["css=.search-form__input", "css:finder"],
+        ["xpath=//input[@name='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Побутова техніка"
+    }, {
+      "id": "e58f99e7-a593-4dbb-b8ee-238c2ed2f165",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Знайти')]",
+      "targets": [
+        ["css=.button_color_green", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Знайти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "687e7fda-af40-446a-b39a-1bce72d0abee",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.top-information__picture",
+      "targets": [
+        ["css=.top-information__picture", "css:finder"],
+        ["xpath=//img[@alt='Почніть підготовку до осінніх холодів до -40%']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bed4e3b8-2e43-4a3b-9e48-affa3b8e65ed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Пральні машини",
+      "targets": [
+        ["linkText=Пральні машини", "linkText"],
+        ["css=.top-widget__categories-item:nth-child(4) .popular-category", "css:finder"],
+        ["xpath=//a[contains(@href, 'https://bt.rozetka.com.ua/ua/washing_machines/c80124/')]", "xpath:href"],
+        ["xpath=//li[4]/rz-category-tile/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Пральні машини')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f46e4c0-2e3f-4ff9-a24b-7b4bd964dda9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.catalog-heading",
+      "targets": [
+        ["css=.catalog-heading", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Пральні машини')]", "xpath:innerText"]
+      ],
+      "value": "Пральні машини"
+    }, {
+      "id": "fa7162ce-72f7-4d8a-934a-49ec8faaf2ef",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1[contains(.,'Пральні машини')]",
+      "targets": [
+        ["css=.catalog-heading", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Пральні машини')]", "xpath:innerText"]
+      ],
+      "value": "Пральні машини"
+    }, {
+      "id": "9c9041d8-6497-4a74-af2f-c809193d1e32",
+      "comment": "",
+      "command": "close",
+      "target": "https://rozetka.com.ua/ua/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2b2e605a-2701-4320-982f-1f6c4dfb386c",
+    "name": "Search for a book using the catalog and applying filters",
+    "commands": [{
+      "id": "55e6c289-4796-46fa-8a43-dde6bd65d374",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca129703-e848-42f9-becd-4e37cd9406a8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0c2ad988-067f-4d1e-9cfc-a54e87d37375",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Офіс, школа, книги",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be90a20e-8b67-4f9e-946e-48664b0a4fa9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Книги для бізнесу",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27908651-a8c5-48e9-9f0b-0711c852cee3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//select",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85ecbc3e-00c5-46cb-a41f-2d33d9e81432",
+      "comment": "",
+      "command": "select",
+      "target": "css=.select-css",
+      "targets": [],
+      "value": "label=Від дорогих до дешевих"
+    }, {
+      "id": "c4167193-b289-470b-84f2-278049c7b48e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button--navy ",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b04526e-04e9-4f2a-96b2-bc0de20659f9",
+      "comment": "",
+      "command": "click",
+      "target": " css=.side-filter__item:nth-child(10) .side-filter__title",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fd60cc8-4ec6-4549-8ca3-227c8915ca77",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(2) > rz-filter-checkbox .checkbox-filter__item:nth-child(5) > .checkbox-filter__link",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8550c7f5-8387-40c2-a515-a501a05145d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button--navy:nth-child(2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7613daaa-9d6b-4e68-ab58-86d836aa3c9e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h1[contains(.,'Книги для бізнесу, Країна-виробник товару Китай')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1159187d-9562-42e3-a29a-9baf9ef5b614",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.breadcrumbs__item--last > .breadcrumbs__link > span",
+      "targets": [
+        ["css=.breadcrumbs__item--last > .breadcrumbs__link > span", "css:finder"],
+        ["xpath=//rz-breadcrumbs/ul/li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Книги')]", "xpath:innerText"]
+      ],
+      "value": "Книги"
+    }]
+  }, {
+    "id": "2bd46ac3-621d-423a-a9e1-00f76e7c06c4",
+    "name": "Create a wish list",
+    "commands": [{
+      "id": "e04dd4d6-9e03-46f0-a661-f84a974f3fbf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9f9cc6b-b9c5-47ff-862d-866c85466589",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header__button > .ng-tns-c60-1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ad7db26-9267-4a59-9410-41886f2bbf31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.side-menu__button-icon--white",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d49ae055-f46d-41fa-9a2a-5fdd8d0ffe6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c60-1:nth-child(4) > .side-menu__item:nth-child(1) > .button",
+      "targets": [
+        ["css=.ng-tns-c60-1:nth-child(4) > .side-menu__item:nth-child(1) > .button", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-0']/nav/div/div[2]/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://rozetka.com.ua/ua/cabinet/wishlist/')])[3]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45f72a04-af53-40aa-8dda-8a8e657a1932",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Додати список')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85b2751e-d802-4ad2-9599-2ca238248827",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__row:nth-child(1) > .ng-untouched",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d43fdb2-5cdc-43b2-8df0-684981cf093e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-dirty:nth-child(2)",
+      "targets": [],
+      "value": "Телефони"
+    }, {
+      "id": "b2ec967d-ebee-4b00-b68b-c0feef7be414",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d01f9a6-6afe-4a2c-8065-c3bebb6c7cba",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.cabinet__heading",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "feac9491-4bd1-41e2-acbc-3497b50d4bb0",
+      "comment": "",
+      "command": "assertText",
+      "target": " css=.ng-star-inserted:nth-child(2) > .wish-details span:nth-child(1)",
+      "targets": [],
+      "value": "Телефони"
+    }]
+  }],
+  "suites": [{
+    "id": "550f69a6-320a-4740-9d3d-281f533d1092",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["50908dd4-a532-4b5c-b8f4-55fc8566986e"]
+  }],
+  "urls": ["https://rozetka.com.ua/ua/"],
+  "plugins": []
+}
